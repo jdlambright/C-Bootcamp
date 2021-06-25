@@ -1,0 +1,13 @@
+C:\Users\joshl\C# Bootcamp\firstConsoleApp\bin\Debug\netcoreapp3.1\firstConsoleApp.exe
+C:\Users\joshl\C# Bootcamp\firstConsoleApp\bin\Debug\netcoreapp3.1\firstConsoleApp.deps.json
+C:\Users\joshl\C# Bootcamp\firstConsoleApp\bin\Debug\netcoreapp3.1\firstConsoleApp.runtimeconfig.json
+C:\Users\joshl\C# Bootcamp\firstConsoleApp\bin\Debug\netcoreapp3.1\firstConsoleApp.runtimeconfig.dev.json
+C:\Users\joshl\C# Bootcamp\firstConsoleApp\bin\Debug\netcoreapp3.1\firstConsoleApp.dll
+C:\Users\joshl\C# Bootcamp\firstConsoleApp\bin\Debug\netcoreapp3.1\firstConsoleApp.pdb
+C:\Users\joshl\C# Bootcamp\firstConsoleApp\obj\Debug\netcoreapp3.1\firstConsoleApp.AssemblyInfoInputs.cache
+C:\Users\joshl\C# Bootcamp\firstConsoleApp\obj\Debug\netcoreapp3.1\firstConsoleApp.AssemblyInfo.cs
+C:\Users\joshl\C# Bootcamp\firstConsoleApp\obj\Debug\netcoreapp3.1\firstConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\joshl\C# Bootcamp\firstConsoleApp\obj\Debug\netcoreapp3.1\firstConsoleApp.dll
+C:\Users\joshl\C# Bootcamp\firstConsoleApp\obj\Debug\netcoreapp3.1\firstConsoleApp.pdb
+C:\Users\joshl\C# Bootcamp\firstConsoleApp\obj\Debug\netcoreapp3.1\firstConsoleApp.genruntimeconfig.cache
+C:\Users\joshl\C# Bootcamp\firstConsoleApp\obj\Debug\netcoreapp3.1\firstConsoleApp.csproj.AssemblyReference.cache
