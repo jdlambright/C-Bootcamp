@@ -8,6 +8,7 @@ namespace MyConsoleApplication
         {
 
             int bottlesOfBeer = 99;
+
         }
     }
 }
