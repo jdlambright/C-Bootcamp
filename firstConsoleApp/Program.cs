@@ -10,7 +10,9 @@ namespace firstConsoleApp
             int tomatoes = 25;
             decimal price = 3.25M;
 
-            decimal result = (tomatoes - 2) * price; 
+            decimal result = (tomatoes - 2) * price;
+
+            Console.WriteLine(result);
         }
     }
 }
