@@ -7,12 +7,16 @@ namespace firstConsoleApp
         static void Main(string[] args)
         {
 
-            int tomatoes = 25;
-            decimal price = 3.25M;
+            decimal decimalValue = 3.25m;
+            decimal valueOfPi = 3.1415m;
+            string message = "DecimalValue is not equal to pi";
 
-            decimal result = (tomatoes - 2) * price;
+            if (decimalValue == valueOfPi)
+            {
+                message = "DecimalValue is equal to pi";
+            }
 
-            Console.WriteLine(result);
+
         }
     }
 }
