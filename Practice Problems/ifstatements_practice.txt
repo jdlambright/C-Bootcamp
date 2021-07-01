@@ -1,0 +1,59 @@
+if statement practice problems
+
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string currentMonth = "june";
+            string message = "its almost halloween";
+
+            if (currentMonth != "october")
+            {
+                message = "I cant wait til halloween";
+            }
+
+
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

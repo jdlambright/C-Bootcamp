@@ -1,0 +1,87 @@
+if statements
+
+if (condition)
+    {
+        execute code
+    }
+    
+string name = "Josh";    
+    
+string message;
+
+if (name == "Josh")
+    {
+        message = "Hello Josh";
+        string myvariable = "a";
+    }
+    
+    
+down here I can reference message but not my variable because myvariable was assigned within the if statement    
+    
+Logical operators
+
+&&     AND
+if (condition1 && condition2)
+    {
+        execute code
+    }
+---------------------------------
+
+||     OR
+if (condition1 || condition 2)
+    {
+        execute code
+    }
+---------------------------------
+
+!      NOT      can be used anywhere in the expression or surrounding the entire expressions
+if !(condition)
+    {
+        execute code
+    }
+    
+Boolean Expression Syntax
+Everything is processed in this order () then && then ||
+
+condition1 = true
+condition2 = false
+condition3 = false
+
+(condition1 || condition2 && condition3)
+this statement is still true because condition 1 was.
+
+((condition 1 || condition2) && condition3)
+this statement is false because both conditions arent met
+ 
+
+console.writeline(string);    writes the string and moves to the next line
+ console.write(string);       writes teh string but does not move to the next line
+
+two common lines to put at end are
+console.writeline("press any key to exit...");
+console.readkey();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
