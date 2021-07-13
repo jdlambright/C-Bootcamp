@@ -7,20 +7,8 @@ namespace firstConsoleApp
         static void Main(string[] args)
         {
 
-            int[] restaurantRatings;
+            decimal[] tips = { 4.25m, 4.22m, 3.26m, 5.28m, 7.83m };
 
-            restaurantRatings = new int[6] { 0, 1, 2, 3, 4, 5 };
-
-            
-
-            int tacoBell = restaurantRatings[0];
-            int hardees = restaurantRatings[1];
-            int burgerKing = restaurantRatings[2];
-            int mcdonalds = restaurantRatings[3];
-            int chickfila = restaurantRatings[4];
-            int longhorn = restaurantRatings[5];
-            
-         
 
         }
     }

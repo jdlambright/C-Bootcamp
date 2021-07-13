@@ -1,0 +1,15 @@
+declaration syntax
+string[] myArray;
+
+initialization syntax
+myArray = new string[number of items]
+
+assignment sytax
+myArray[0] = "item";
+
+initialization and assignment
+myArray = new string[] {"item", "item",....};
+
+
+declaration initialization and assignment
+string[] array_name = {"name1", "name2", "name3"}
