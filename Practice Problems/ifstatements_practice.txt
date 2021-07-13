@@ -1,5 +1,177 @@
 if statement practice problems
 
+1 first name john
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string firstName = "Josh";
+            bool isfirstNameJohn = false;
+
+            if (firstName == "John")
+            {
+                isfirstNameJohn = true;
+            }
+
+        }
+    }
+}
+
+2 favorite movie
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string myFavoriteMovie = "toy story";
+            string myInstructorsFavoriteMovie = "back to the future";
+            string message;
+
+            if (myFavoriteMovie == myInstructorsFavoriteMovie)
+            {
+                message = "we have the same favorite movie";
+            }
+
+        }
+    }
+}
+
+3 likes pickles
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool likesPickles = false;
+            bool addToBurger = false;
+
+            if (likesPickles)
+            {
+                addToBurger = true;
+            }
+
+        }
+    }
+}
+
+4 Lucky Number
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int luckyNumber = 7;
+            string luckStatus = "im lucky";
+
+            if (luckyNumber != 7)
+            {
+                luckStatus = "im not very lucky";
+            }
+
+        }
+    }
+}
+
+5 Equal to pi
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            decimal decimalValue = 3.25m;
+            decimal valueOfPi = 3.1415m;
+            string message = "the decimal value is not equal to pi";
+
+            if (decimalValue == valueOfPi)
+            {
+                message = "the decimal value is equal to pi";
+            }
+
+
+        }
+    }
+}
+
+6 Soup of the day
+
+
+7 security message
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int pinEntry = 3482;
+            int pinNumber = 1234;
+
+            string securityMessage = "access denied";
+
+            if (pinEntry == pinNumber)
+            {
+                securityMessage = "access granted";
+            }
+        }
+    }
+}
+
+8 can swim
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool canSwim = true;
+            string weekendPlans = "lets go hiking";
+
+            if (canSwim)
+            {
+                weekendPlans = "lets go swimming";
+            }
+        }
+    }
+}
+
+9
+
+
+
+10 Halloween
 
 using System;
 
@@ -24,33 +196,749 @@ namespace firstConsoleApp
     }
 }
 
+11 Favorite food
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string favoriteFood = "steak";
+            string tonightsDinner = "lasagna";
+            string message;
+
+            if (tonightsDinner == favoriteFood)
+            {
+                message = "its my favorite";
+            }
 
 
 
+        }
+    }
+}
+
+12 Find error - = instead of ==
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string myState = "Florida";
+            string message;
+            
+            //the error was there was only = instead of == in mystate == "california"
+            if (myState == "California")
+            {
+                message = "Welcome to Cali!";
+            }
+            
+        }
+    }
+}
+
+13 find error -missing ()
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int myNumber = 12;
+            int luckyNumber = 7;
+            string message = "No luck today!";
+
+            //the error was missing ()
+            if (myNumber == luckyNumber)
+            {
+                message = "It's your lucky day!";
+            }
+        }
+    }
+}
+
+14 find error missing ;
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool likesMustard = false;
+            string hotDogTopping = "No mustard";
+
+            if (likesMustard)
+            {
+                //the error was a missing ;
+                hotDogTopping = "Add mustard";
+            }
+
+        }
+    }
+}
+
+15 find error : instead of ; and no {
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string myFavoriteFood = "Pizza";
+            string friendsFavoriteFood = "Steak"; // there was a : instead of ;
+            string message;
+
+            if (myFavoriteFood == friendsFavoriteFood)
+                // there was also missing {
+            {
+                message = "Let's have dinner!";
+            }
+                
+        }
+    }
+}
+
+16 find error - do not capitalize i in if
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool isLoggedIn = true;
+            string message;
+            
+            // i was capitalized
+            if (isLoggedIn)
+            {
+                message = "Welcome!";
+            }
+            
+        }
+    }
+}
+
+17 mustard logical error
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool likesMustard = false;
+            string hotDogTopping = "no mustard"; // there is a logical error
+
+            if (likesMustard)
+            {
+                hotDogTopping = "add mustard";
+            }
+
+        }
+    }
+}
 
 
+---------------------------------------------------------------------------------------------------
+
+18 older than instructor
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int myAge = 35;
+            int myInstructorsAge = 42;
+
+            string message = "my instructor is older than me";
+
+            if (myAge > myInstructorsAge)
+            {
+                message = "I am older than my instructor";
+            }
+
+        }
+    }
+}
 
 
+19 movie tickets
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            decimal availableFunds = 35.25m;
+            decimal movieTicketPrice = 13.50m;
+            string message = "I do not have enough money to see a movie";
+
+            if (availableFunds >= movieTicketPrice)
+            {
+                message = "its movie time";
+            }
+
+        }
+    }
+}
+
+20 login
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int incorrectLoginCount = 2;
+            int maxLoginAttempts = 3;
+            bool isAccountLocked = false;
+
+            if (incorrectLoginCount >= maxLoginAttempts)
+            {
+                isAccountLocked = true;
+            }
+        }
+    }
+}
+
+21 apples and oranges
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int numOfApples = 7;
+            int numOfOranges = 10;
+            string fruitStatus = "I do not have more apples than oranges";
+
+            if (numOfApples > numOfOranges)
+            {
+                fruitStatus = "I have more apples than oranges";
+            }
+        }
+    }
+}
+
+22 drinking
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int myAge = 35;
+            int legalDrinkingAge = 21;
+            string message = "I am not old enough to drink";
+
+            if (myAge >= legalDrinkingAge)
+            {
+                message = "bring me 2 pina coladas";
+            }
+        }
+    }
+}
+
+23 eggs for recipe
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int numEggs = 2;
+            int eggsInRecipe = 3;
+            string message = "i have enough eggs";
+
+            if (numEggs < eggsInRecipe)
+            {
+                message = "I have enough eggs";
+            }
 
 
+        }
+    }
+}
+
+24 plane ticket
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            decimal airlineTicketPrice = 375.95m;
+            decimal maxTicketBudget = 350.00m;
+            string travelPlans = "I have to drive";
+
+            if (airlineTicketPrice<= maxTicketBudget)
+            {
+                travelPlans = "I am flying on a jet plane";
+            }
 
 
+        }
+    }
+}
+
+25 Tunnel
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int truckHeightInches = 60;
+            int tunnelClearanceInces = 75;
+            bool canEnterTunnel = false;
+
+            if (truckHeightInches <= tunnelClearanceInces)
+            {
+                canEnterTunnel = true;
+            }
 
 
+        }
+    }
+}
+
+26 siblings age
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int myBrothersAge = 20;
+            int mySistersAge = 36;
+            string message = "My brother is not younger than my sister"
+                ;
+            if (myBrothersAge< mySistersAge)
+            {
+                message = "my brother is younger than my sister"
+            }
+
+        }
+    }
+}
+
+27 in time
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int timelimitMinutes = 60;
+            int taskCompletionMinutes = 72;
+            bool isCompletedInTime = false;
+
+            if (taskCompletionMinutes <= timelimitMinutes)
+            {
+                isCompletedInTime = true;
+            }
+
+        }
+    }
+}
+
+28 find errors
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int myAge = 30;
+            int myBrothersAge = 21;
+            string message = "I am not older than my brother";
+
+            if (myAge > myBrothersAge)
+            {
+                message = "I am older than my brother";//forgot ""
+            }
+
+        }
+    }
+}
+
+------------------------------------------------------------------------------------
+section 3 multiple conditions
+
+1) youngest sibling
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int myAge = 35;
+            int brothersAge = 25;
+            int sistersage = 31;
+
+            string message;
+
+            if (myAge < brothersAge && myAge < sistersage)
+            {
+                message = "I am the youngest sibling";
+            }
+            
+        }
+    }
+}
+
+2 not oldest
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int myAge = 35;
+            int brothersAge = 25;
+            int sistersAge = 31;
+
+            string message;
+
+            if (myAge < brothersAge || myAge < sistersAge)
+            {
+                message = "I am not the oldest sibling";
+            }
+            
+        }
+    }
+}
+
+3) brother is older
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int myAge = 35;
+            int brothersAge = 25;
+            int sistersAge = 31;
+
+            string message;
+
+            if (!(myAge > brothersAge))
+            {
+                message = "I am not older than my brother";
+            }
+            
+        }
+    }
+}
+
+4) brother is oldest
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int myAge = 25;
+            int brothersAge = 35;
+            int sistersAge = 31;
+
+            string message;
+
+            if ((brothersAge > myAge || sistersAge > myAge) && brothersAge > sistersAge)
+            {
+                message = "I am not the oldest sibling but my brother is";
+            }
+            
+        }
+    }
+}
+
+5) sister in middle
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int myAge = 35;
+            int brothersAge = 25;
+            int sistersAge = 31;
+
+            string message;
+
+            if ((sistersAge < myAge && sistersAge > brothersAge) || (sistersAge > myAge && sistersAge < brothersAge))
+            {
+                message = "my sister is the middle child";
+            }
+            
+        }
+    }
+}
+
+6) twins with older sister
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int myAge = 35;
+            int brothersAge = 25;
+            int sistersAge = 31;
+
+            string message;
+
+            if(brothersAge == myAge && sistersAge > myAge)
+            {
+                message = "my brother and I are twins and my sister is older than us";
+            }
+            
+        }
+    }
+}
+
+7 sweater to work
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string dayOfWeek = "Saturday";
+            decimal tempDegreesF = 71.2m;
+            int sweaterTempF = 65;
+            string message;
+
+            if ((tempDegreesF <= sweaterTempF) && (dayOfWeek != "saturday" || dayOfWeek != "sunday")) 
+            {
+                message = "I will need to wear a sweater to work today";
+            }
+
+            
+        }
+    }
+}
+
+----------------------------------------------------------
+if else if and else statements
+
+1) dice
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int dieOne = 4;
+            int dieTwo = 2;
+            string message;
+
+            if (dieOne == dieTwo)
+            {
+                message = "the dice are equal";
+            }
+            else if (dieOne>dieTwo)
+            {
+                message = "dieOne is greater";
+            }
+            else
+            {
+                message = "dieTwo is greater";
+            }
 
 
+        }
+    }
+}
 
 
+2) bank account
 
+using System;
 
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
 
+            decimal bankAccount = 1251.45m;
+            int monthlyBills = 500;
+            bankAccount = bankAccount - monthlyBills;
 
+            if (bankAccount > 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+            }
+            else if (bankAccount < 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+            }
 
+            Console.WriteLine(bankAccount);
+        }
+    }
+}
 
+3) equal scores
+part 1
 
+using System;
 
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
 
+            int myScore1 = 28;
+            int myScore2 = 24;
 
+            if (myScore1 =! myScore2)
+            {
+                Console.WriteLine("not equal");
+            }
+            else
+            {
+                Console.WriteLine("equal");
+            }
+        }
+    }
+}
+
+part 2
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int myScore1 = 28;
+            int myScore2 = 24;
+
+            if (myScore1 != myScore2)
+            {
+                Console.WriteLine("not equal");
+            }
+            else
+            {
+                Console.WriteLine("equal");
+            }
+        }
+    }
+}
 
 
 
