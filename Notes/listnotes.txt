@@ -13,3 +13,26 @@ myArray = new string[] {"item", "item",....};
 
 declaration initialization and assignment
 string[] array_name = {"name1", "name2", "name3"}
+
+multi diminsional arrays aka tables
+
+first pick a data type and then put a comma in [] then name
+
+
+int[,] studentPhoneNumbers = new int[5,2];
+
+this will make a table of 5 rows and 2 columns
+
+
+
+
+questions for coach...
+
+are the length of arrays changeable once they have been assigned?
+
+why would you use the syntax that looks like this?
+string [] myArray = new string[]{"item",...}; when you dont actually need the new string[]
+
+what do you do with different data types?
+
+

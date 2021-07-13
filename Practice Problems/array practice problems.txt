@@ -1,37 +1,187 @@
-1
+1 bedroom count
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] bedroomCount = new int[5];
+
+            bedroomCount[0] = 3;
+            bedroomCount[1] = 2;
+            bedroomCount[2] = 5;
+            bedroomCount[3] = 4;
+            bedroomCount[4] = 6;
 
 
+        }
+    }
+}
 
-2
+2 hours worked
 
+using System;
 
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
 
-3
-
-
-
-4
-
-
-
-5
-
-
-
-6
+            int[] hoursworked = new int[] { 7, 6, 7, 8, 9 };
 
 
+        }
+    }
+}
 
-7
+3 friends and family names
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] friendsAndFamilyNAmes = { "nora", "owen", "raelyn", "kye" };
 
 
+        }
+    }
+}
 
-8
+4 restaurant ratings
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] restaurantRatings = { 0, 1, 2, 3, 4, 5 };
+
+            int tacoBell = restaurantRatings[0];
+            int chipotle = restaurantRatings[1];
+            int burgerKing = restaurantRatings[2];
+            int wendys = restaurantRatings[3];
+            int chickfila = restaurantRatings[4];
+            int texasRoadhouse = restaurantRatings[5];
 
 
+        }
+    }
+}
 
-9
+5 electronics brands
 
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] electronicsBrands = new string[4];
+
+            electronicsBrands[0] = "apple";
+            electronicsBrands[1] = "microsoft";
+            electronicsBrands[2] = "samsung";
+            electronicsBrands[3] = "toshiba"; 
+
+
+        }
+    }
+}
+
+6 travel distance
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            decimal[] travelDistanceKM = new decimal[] { 3.46m, 4.78m, 9.45m };
+
+
+        }
+    }
+}
+
+7 yatzhee
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] yatzee = { 4, 2, 4, 1, 5, 6 };
+
+
+        }
+    }
+}
+
+8 daily high temperature
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] dayTempHigh = new int[] { 89, 84, 92, 97 };
+
+
+        }
+    }
+}
+
+
+9 test scores
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] testScores = new int[3];
+
+            testScores[0] = 99;
+            testScores[1] = 78;
+            testScores[2] = 88;
+
+
+        }
+    }
+}
 
 
 10 first names
@@ -51,4 +201,661 @@ namespace firstConsoleApp
     }
 }
 
-11
+11 dog names
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] dogNames = new string[] { "fido", "spot", "max", "milo" };
+
+        }
+    }
+}
+
+12 days exercised
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool[] exercised = new bool[] { false, true, true, true, false, true, true };
+
+
+        }
+    }
+}
+
+13 tips
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            decimal[] tips = { 4.25m, 4.22m, 3.26m, 5.28m, 7.83m };
+
+
+        }
+    }
+}
+
+14 first names
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] firstNames = new firstNames[3];
+
+            firstNames[0] = "John";
+            firstNames[1] = "Sally";
+            firstNames[2] = "Barbara";
+
+
+        }
+    }
+}
+
+15 exercised 2
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool[] exercised = new bool[7];
+
+            exercised[0] = false;
+            exercised[1] = true;
+            exercised[2] = true;
+            exercised[3] = true;
+            exercised[4] = false;
+            exercised[5] = true;
+            exercised[6] = true;
+
+
+        }
+    }
+}
+
+16 grades
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] grades = new int[3];
+
+            grades[0] = 98;
+            grades[1] = 92;
+            grades[2] = 84;
+
+            int firstGrade = grades[0];
+            int secondGrade = grades[1];
+            int thirdGrade = grades[2];
+
+
+        }
+    }
+}
+
+17 prices
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            decimal[] prices = new decimal[4];
+
+            prices[0] = 5.26m;
+            prices[1] = 8.24m;
+            prices[2] = 7.42m;
+            prices[3] = 6.98m;
+
+            decimal firstPrice = prices[0];
+            decimal secondPrice = prices[1];
+            decimal thirdPrice = prices[2];
+            decimal forthPrice = prices[3];
+
+
+        }
+    }
+}
+
+17 animals
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] animals = new string[2];
+
+            animals[0] = "bear";
+            animals[1] = "dog";
+
+            string firstAnimal = animals[0];
+            string secondAnimal = animals[1];
+
+
+        }
+    }
+}
+
+18 myths
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool[] myths = { true, false };
+
+            bool firstMyth = myths[0];
+            bool secondMyth = myths[1];
+
+
+        }
+    }
+}
+
+19 store and customer receipt
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            decimal[] storeReceipt = { 2.56m, 7.34m, 6.92m };
+
+            decimal item1 = storeReceipt[0];
+            decimal item2 = storeReceipt[1];
+            decimal item3 = storeReceipt[2];
+
+            decimal[] customerReceipt = { item1, item2, item3 };
+
+
+        }
+    }
+}
+
+20 clothing counts
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] clothingCounts = { 5, 3, 10, 4 };
+
+            int shirts = clothingCounts[0];
+            int socks = clothingCounts[1];
+            int pants = clothingCounts[2];
+            int underwear = clothingCounts[3];
+                
+        }
+    }
+}
+
+21 high temps
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] highTemps = new int[] { 92, 89, 97, 86, 88, 93, 95 };
+                
+        }
+    }
+}
+
+22 test scores
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] testScores = new int[3];
+
+            testScores[0] = 98;
+            testScores[1] = 94;
+            testScores[2] = 89;
+                
+        }
+    }
+}
+
+23 tips
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            decimal[] tips = { 5.24m, 4.22m, 6.23m};
+                
+        }
+    }
+}
+
+24 days of week
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] daysOfWeek = { "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday" };
+                
+        }
+    }
+}
+
+25 football scores
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] footballTeamScores = { 7, 14, 28, 31 };
+
+            int theScore = footballTeamScores[3];
+                
+        }
+    }
+}
+
+26 grocery list
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] groceryList = new string[5];
+
+            groceryList[0] = "eggs";
+            groceryList[1] = "milk";
+            groceryList[2] = "cheese";
+            groceryList[3] = "bread";
+            groceryList[4] = "ice cream";
+
+                
+        }
+    }
+}
+
+
+___________________________________ Level 2 _____________________________________________________________________
+
+1 three farmers
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] threeFarmers = { 50, 65, 42 };
+
+            int farmerJoeTotal = threeFarmers[0];
+            int farmerBobTotal = threeFarmers[1];
+            int farmerDanTotal = threeFarmers[2];
+
+            int totalApples = farmerBobTotal + farmerDanTotal + farmerJoeTotal;
+
+                
+        }
+    }
+}
+
+2 shopping cart total
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            decimal[] shoppingCart = { 5.22m, 19.26m, 14.57m };
+
+            decimal total = shoppingCart[0] + shoppingCart[1] + shoppingCart[2];
+
+                
+        }
+    }
+}
+
+3 we love to go to the beach
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] words = { "beach", "we ", "to ", "the", "go ", "love ", "to " };
+
+            string sentence = words[1] + words[5] + words[2] + words[4] + words[6] + words[3] + words[0];
+
+
+
+        }
+    }
+}
+
+4 double digits
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] doubleDigits = {10, 40, 50 };
+
+            int oneHundred = doubleDigits[0] + doubleDigits[1] + doubleDigits[2];
+
+
+
+        }
+    }
+}
+
+5 high low temps 2 diminsional list
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[,] weekLowHighTemp = new int[7, 2];
+            //monday
+            weekLowHighTemp[0, 0] = 60;
+            weekLowHighTemp[0, 1] = 91;
+            //tuesday
+            weekLowHighTemp[1, 0] = 72;
+            weekLowHighTemp[1, 1] = 93;
+            //wednseday
+            weekLowHighTemp[2, 0] = 74;
+            weekLowHighTemp[2, 1] = 98;
+            //thursday
+            weekLowHighTemp[3, 0] = 69;
+            weekLowHighTemp[3, 1] = 90;
+            //friday
+            weekLowHighTemp[4, 0] = 65;
+            weekLowHighTemp[4, 1] = 87;
+            //saturday
+            weekLowHighTemp[5, 0] = 71;
+            weekLowHighTemp[5, 1] = 99;
+            //sunday
+            weekLowHighTemp[6, 0] = 66;
+            weekLowHighTemp[6, 1] = 94;
+
+        }
+    }
+}
+
+6 student grades
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] studentNames = { "fred", "barbara", "sally", "jake", "amy"};
+            int[,] studentGrades = new int[5, 4];
+
+            //fred grades
+            studentGrades[0, 0] = 98;
+            studentGrades[0, 1] = 86;
+            studentGrades[0, 2] = 89;
+            studentGrades[0, 3] = 94;
+
+            //barabara grades 
+            studentGrades[1, 0] = 85;
+            studentGrades[1, 1] = 86;
+            studentGrades[1, 2] = 83;
+            studentGrades[1, 3] = 90;
+
+            //sally grades
+            studentGrades[2, 0] = 99;
+            studentGrades[2, 1] = 98;
+            studentGrades[2, 2] = 100;
+            studentGrades[2, 3] = 97;
+
+            // jake grades
+            studentGrades[3, 0] = 95;
+            studentGrades[3, 1] = 82;
+            studentGrades[3, 2] = 84;
+            studentGrades[3, 3] = 90;
+
+            // amy grades
+            studentGrades[4, 0] = 98;
+            studentGrades[4, 1] = 89;
+            studentGrades[4, 2] = 86;
+            studentGrades[4, 3] = 99;
+
+        }
+    }
+}
+
+7 student averages  had to put (decimal) at front of calculation to make sure that it would not round.
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] studentNames = { "fred", "barbara", "sally", "jake", "amy"};
+            int[,] studentGrades = new int[5, 4];
+            decimal[] studentAverage = new decimal[5];
+
+            //fred grades
+            studentGrades[0, 0] = 98;
+            studentGrades[0, 1] = 86;
+            studentGrades[0, 2] = 89;
+            studentGrades[0, 3] = 94;
+
+            //barabara grades 
+            studentGrades[1, 0] = 85;
+            studentGrades[1, 1] = 86;
+            studentGrades[1, 2] = 83;
+            studentGrades[1, 3] = 90;
+
+            //sally grades
+            studentGrades[2, 0] = 99;
+            studentGrades[2, 1] = 98;
+            studentGrades[2, 2] = 100;
+            studentGrades[2, 3] = 97;
+
+            // jake grades
+            studentGrades[3, 0] = 95;
+            studentGrades[3, 1] = 82;
+            studentGrades[3, 2] = 84;
+            studentGrades[3, 3] = 90;
+
+            // amy grades
+            studentGrades[4, 0] = 98;
+            studentGrades[4, 1] = 89;
+            studentGrades[4, 2] = 86;
+            studentGrades[4, 3] = 99;
+
+            //fred average
+            studentAverage[0] =(decimal) (studentGrades[0, 0] + studentGrades[0, 1] + studentGrades[0, 2] + studentGrades[0, 3]) / 4;
+
+            //barbara average
+            studentAverage[1] = (decimal) (studentGrades[1, 0] + studentGrades[1, 1] + studentGrades[1, 2] + studentGrades[1, 3]) / 4;
+
+            //sally average
+            studentAverage[2] = (decimal) (studentGrades[2, 0] + studentGrades[2, 1] + studentGrades[2, 2] + studentGrades[2, 3]) / 4;
+
+            //jake average
+            studentAverage[3] =(decimal) (studentGrades[3, 0] + studentGrades[3, 1] + studentGrades[3, 2] + studentGrades[3, 3]) / 4;
+
+            //amy avaerage
+            studentAverage[4] = (decimal) (studentGrades[4, 0] + studentGrades[4, 1] + studentGrades[4, 2] + studentGrades[4, 3]) / 4;
+        }
+    }
+}
+
+8 ascending and descending
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] ascending = { 1, 2, 3, 4 };
+
+            int[] descending = { ascending[3], ascending[2], ascending[1], ascending[0] };
+
+
+        }
+    }
+}
+
+9 neighbor numbers
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] original = { 17, 4 };
+
+            int[] neighborNumbers = { original[0] - 1, original[1] + 1 }; 
+
+
+        }
+    }
+}
+
+10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

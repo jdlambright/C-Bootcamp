@@ -7,7 +7,11 @@ namespace firstConsoleApp
         static void Main(string[] args)
         {
 
-            decimal[] tips = { 4.25m, 4.22m, 3.26m, 5.28m, 7.83m };
+            int[] testScores = new int[3];
+
+            testScores[0] = 99;
+            testScores[1] = 78;
+            testScores[2] = 88;
 
 
         }
