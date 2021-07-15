@@ -28,11 +28,32 @@ this will make a table of 5 rows and 2 columns
 
 questions for coach...
 
-are the length of arrays changeable once they have been assigned?
+are the length of arrays changeable once they have been assigned? why do you really want to assign it? what happens if there are less items than length it was assigned
 
 why would you use the syntax that looks like this?
 string [] myArray = new string[]{"item",...}; when you dont actually need the new string[]
 
 what do you do with different data types?
+
+talk to me about 2 diminsonal list. can you have multiple data types?
+
+is there a simpler way than 
+listItem [0,0] = 1;
+listItem [0,1] = 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
