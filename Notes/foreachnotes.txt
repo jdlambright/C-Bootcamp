@@ -1,0 +1,77 @@
+foreach ( datatype itemName in collectionName)
+{
+    ... execute code
+}
+
+
+jump statement: a keyword that transfers code execution to a different part of the code.
+
+continue- used to jump out of the current iteration.
+
+break- used to jump out of the entire looping statement
+
+
+examples
+
+to find average of array value
+
+int[] intArray = {3,6,8,9,12,46,78};
+
+int integerSum = 0;
+int valueCount = 0;
+decimal valueAverage = 0.0m;
+
+foreach (int intValue in intArray)
+{
+    integerSum = integerSum + intValue;
+    valueCount++;// the same as +=1
+}
+
+valueAverage = integerSum / (valueCount * 1.0m); // we multiply value by 1.0m to make sure it returns a decimal value
+
+
+continue statement
+
+int highValueCount = 0;
+int lowValueCount = 0;
+
+foreach (int intValue in intArray)
+{
+    if(intValue > 12)
+    {
+        highValueCount ++;
+        continue;
+    }
+    
+    lowValueCount ++;
+
+}
+
+break statement
+
+string[] names = {"josh", "sarah", "kelly", "dave"};
+string searchValue = "kelly";
+bool valueExists = false;
+
+foreach (string name in names)
+{
+    if (name == searchValue)
+    {
+        valueExists = true;
+        break;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

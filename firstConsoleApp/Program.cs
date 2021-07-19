@@ -7,14 +7,18 @@ namespace firstConsoleApp
         static void Main(string[] args)
         {
 
-            int[] testScores = new int[3];
+            int[] calories = { 800, 850, 300 };
+            int dailyCalorieDiet = 2000;
+            int totalCalories = 0;
 
-            testScores[0] = 99;
-            testScores[1] = 78;
-            testScores[2] = 88;
+            foreach (int cal in calories)
+            {
+                totalCalories = totalCalories + cal;
+            }
 
-
-        }
+            Console.WriteLine("calorie percentage of " + dailyCalorieDiet + " calorie diet: " + ((decimal)totalCalories / (decimal)dailyCalorieDiet) * 100 + "%");
+            Console.ReadKey();
+       }
     }
 }
 

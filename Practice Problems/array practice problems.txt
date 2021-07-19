@@ -186,20 +186,6 @@ namespace firstConsoleApp
 
 10 first names
 
-using System;
-
-namespace firstConsoleApp
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-
-            string[] firstName = new string[] { "josh", "nora", "kelly" };
-
-        }
-    }
-}
 
 11 dog names
 
@@ -265,7 +251,7 @@ namespace firstConsoleApp
         static void Main(string[] args)
         {
 
-            string[] firstNames = new firstNames[3];
+            string[] firstNames = new string[3];
 
             firstNames[0] = "John";
             firstNames[1] = "Sally";
@@ -457,32 +443,15 @@ namespace firstConsoleApp
         static void Main(string[] args)
         {
 
-            int[] highTemps = new int[] { 92, 89, 97, 86, 88, 93, 95 };
-                
+            int[] highTemps = { 88, 97, 94, 92 };           
+
         }
     }
 }
 
 22 test scores
 
-using System;
 
-namespace firstConsoleApp
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-
-            int[] testScores = new int[3];
-
-            testScores[0] = 98;
-            testScores[1] = 94;
-            testScores[2] = 89;
-                
-        }
-    }
-}
 
 23 tips
 
