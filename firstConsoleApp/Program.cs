@@ -7,16 +7,33 @@ namespace firstConsoleApp
         static void Main(string[] args)
         {
 
-            int[] calories = { 800, 850, 300 };
-            int dailyCalorieDiet = 2000;
-            int totalCalories = 0;
+            bool[] statements = { false, true, false, false, false, true };
+            int falseCount = 0;
+            int trueCount = 0;
 
-            foreach (int cal in calories)
+            foreach (bool statement in statements)
             {
-                totalCalories = totalCalories + cal;
+                if (statement == true)
+                {
+                    trueCount++;
+                }
+                else
+                {
+                    falseCount++;
+                }
             }
 
-            Console.WriteLine("calorie percentage of " + dailyCalorieDiet + " calorie diet: " + ((decimal)totalCalories / (decimal)dailyCalorieDiet) * 100 + "%");
+            if(trueCount > falseCount)
+            {
+                Console.WriteLine("There are more true statements");
+
+            }
+            else
+            {
+                Console.WriteLine("There are more false statements");
+            }
+
+
             Console.ReadKey();
        }
     }

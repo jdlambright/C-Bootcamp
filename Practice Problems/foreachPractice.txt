@@ -1,0 +1,393 @@
+1 soda brands
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] sodaBrands = { "coke", "pepsi", "dr pepper" };
+            int totalBrands = 0;
+
+            foreach (string brand in sodaBrands)
+            {
+                totalBrands++;
+            }
+
+            Console.WriteLine("the total number of brands is " + totalBrands);
+            Console.ReadKey();
+
+       }
+    }
+}
+
+2 total sports
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] sportsKnown = { "baseball", "football", "soccer", "basketball" };
+            int totalSports = 0;
+
+            foreach (string sport in sportsKnown) ;
+            {
+                totalSports++;
+            }
+
+            Console.WriteLine("the total number of sports is " + totalSports);
+            Console.ReadKey();
+
+       }
+    }
+}
+
+3 test grades
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] testGrades = { 99, 87, 96, 92 };
+
+            foreach (int grade in testGrades)
+            {
+                Console.WriteLine(grade);
+            }
+
+            Console.ReadKey();
+       }
+    }
+}
+
+4 sentence
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] sentence = { "hello", "I'm", "josh" };
+
+            foreach (string word in sentence)
+            {
+                Console.WriteLine(word + " ");
+            }
+
+            Console.ReadKey();
+       }
+    }
+}
+
+5 body fat
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            decimal[] bodyFat = { .124m, .152m, .194m, .146m };
+
+            foreach(decimal percentage in bodyFat)
+            {
+                Console.WriteLine(percentage * 100 + "%");
+            }
+
+
+            Console.ReadKey();
+       }
+    }
+}
+
+6 news facts
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool[] newsFacts = { false, false, false, false };
+
+            foreach( bool fact in newsFacts)
+            {
+                Console.WriteLine(fact);
+            }
+
+
+            Console.ReadKey();
+       }
+    }
+}
+
+7 total points
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] totalPointsScored = { 21, 25, 14, 42, 35 };
+
+            foreach (int points in totalPointsScored)
+            {
+                Console.WriteLine(points);
+            }
+
+
+            Console.ReadKey();
+       }
+    }
+}
+
+8 bread
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] sliceCounts = { 12, 10, 14, 11 };
+
+            foreach (int loaf in sliceCounts)
+            {
+                Console.WriteLine(loaf);
+            }
+
+
+            Console.ReadKey();
+       }
+    }
+}
+
+9 grocery prices
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            decimal[] prices = { 6.28m, 19.27m, 22.45m, 13.12m };
+            decimal totalPrice = 0.0m;
+
+            foreach(decimal cost in prices)
+            {
+                totalPrice = totalPrice + cost;
+            }
+
+            Console.WriteLine("the total bill is $" + totalPrice);
+            Console.ReadKey();
+       }
+    }
+}
+
+10 calorie diet
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] calories = { 800, 850, 300 };
+            int dailyCalorieDiet = 2000;
+            int totalCalories = 0;
+
+            foreach (int cal in calories)
+            {
+                totalCalories += cal;
+            }
+
+            Console.WriteLine("calorie percentage of " + dailyCalorieDiet + " calorie diet: " + ((decimal)totalCalories / (decimal)dailyCalorieDiet) * 100 + "%");
+            Console.ReadKey();
+       }
+    }
+}
+
+11 increasing decreasing
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] numbersIncreasing = { 1, 2, 3, 4, 5 };
+            int[] numbersDecreasting = new int[numbersIncreasing.Length];
+            int index = numbersDecreasting.Length - 1;
+
+            foreach (int num in numbersIncreasing)
+            {
+                numbersDecreasting[index] = num;
+                index--;
+            }
+
+
+            Console.WriteLine("values of numbersIncreasing: ");
+
+            foreach (int incNum in numbersIncreasing)
+            {
+                Console.WriteLine(incNum);
+            }
+
+            Console.WriteLine("values of numbersDecreasing: ");
+
+            foreach (int decNum in numbersDecreasting)
+            {
+                Console.WriteLine(decNum);
+            }
+
+
+
+            Console.ReadKey();
+       }
+    }
+}
+
+12 test average
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] testGrades = { 98, 85, 92, 87 };
+            int total = 0;
+            int testAvg;
+
+            foreach(int grade in testGrades)
+            {
+                total += grade;
+            }
+
+            testAvg = total / testGrades.Length;
+
+            Console.WriteLine("the average test grade is: " + testAvg);
+
+            Console.ReadKey();
+       }
+    }
+}
+
+13 elements in array
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] arrayLengths = { 5, 4 };
+            int totalElements = 1;
+
+            foreach (int len in arrayLengths)
+            {
+                totalElements *= len;
+            }
+
+            Console.WriteLine("total elements in your " + arrayLengths.Length + " dimensional array : " + totalElements);
+            Console.ReadKey();
+       }
+    }
+}
+
+14 inventory
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] purchasedToday = { 4, 2, 6, 4 };
+            int beginInv = 50;
+            int currentInv = beginInv;
+
+            foreach (int transaction in purchasedToday)
+            {
+                currentInv -= transaction;
+            }
+
+            Console.WriteLine("Beginning Inventory: " + beginInv);
+            Console.WriteLine("Ending Inventory: " + currentInv);
+            Console.ReadKey();
+       }
+    }
+}
+
+15 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
