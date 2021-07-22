@@ -6,36 +6,18 @@ namespace firstConsoleApp
     {
         static void Main(string[] args)
         {
+            decimal[] prices = { 12.35m, 14.33m, 19.95m };
+            decimal totalPrice = 0.0m;
 
-            bool[] statements = { false, true, false, false, false, true };
-            int falseCount = 0;
-            int trueCount = 0;
-
-            foreach (bool statement in statements)
+            foreach (decimal price in prices)
             {
-                if (statement == true)
-                {
-                    trueCount++;
-                }
-                else
-                {
-                    falseCount++;
-                }
+                totalPrice += price;
             }
 
-            if(trueCount > falseCount)
-            {
-                Console.WriteLine("There are more true statements");
-
-            }
-            else
-            {
-                Console.WriteLine("There are more false statements");
-            }
-
-
+            Console.WriteLine("the total bill is " + totalPrice);
             Console.ReadKey();
-       }
+
+        }
     }
 }
 
