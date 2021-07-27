@@ -6,15 +6,21 @@ namespace firstConsoleApp
     {
         static void Main(string[] args)
         {
-            decimal[] prices = { 12.35m, 14.33m, 19.95m };
-            decimal totalPrice = 0.0m;
 
-            foreach (decimal price in prices)
+            int[] restaurantRatings = { 5, 3, 2, 4, 5, 3, 2 };
+            int minimumRating = 4;
+            int meetsMinimum = 0;
+
+            foreach( int rating in restaurantRatings)
             {
-                totalPrice += price;
+                if (rating >= minimumRating)
+                {
+                    meetsMinimum++;
+                }
             }
 
-            Console.WriteLine("the total bill is " + totalPrice);
+            Console.WriteLine("total restuarants: " + restaurantRatings.Length);
+            Console.WriteLine("meets minimum: " + meetsMinimum);
             Console.ReadKey();
 
         }

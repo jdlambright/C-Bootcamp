@@ -297,21 +297,20 @@ namespace firstConsoleApp
         static void Main(string[] args)
         {
 
-            int[] testGrades = { 98, 85, 92, 87 };
-            int total = 0;
-            int testAvg;
-
-            foreach(int grade in testGrades)
+            int[] testGrades = { 98, 92, 96, 95, 93 };
+            int totaScore = 0;
+            
+            foreach (int grade in testGrades)
             {
-                total += grade;
+                totaScore += grade;
             }
 
-            testAvg = total / testGrades.Length;
-
-            Console.WriteLine("the average test grade is: " + testAvg);
+            Console.WriteLine("the average grade was : " + totaScore / (decimal)testGrades.Length);
+            
 
             Console.ReadKey();
-       }
+
+        }
     }
 }
 
@@ -367,8 +366,149 @@ namespace firstConsoleApp
     }
 }
 
-15 
+15 max price
 
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            decimal[] purchasedGoods = { 19.98m, 12.47m, 24.99m, 35.99m, 7.50m, 20.99m };
+            decimal maxPrice = 0;
+
+            foreach ( decimal good in purchasedGoods)
+            {
+                if (good > maxPrice)
+                {
+                    maxPrice = good;
+                }
+            }
+
+            Console.WriteLine("The most expensive item cost $" + maxPrice);
+            Console.ReadKey();
+
+        }
+    }
+}
+
+16 min price
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            decimal[] purchasedGoods = { 19.98m, 12.47m, 24.99m, 35.99m, 7.50m, 20.99m };
+            decimal minPrice = purchasedGoods[0];
+
+            foreach ( decimal good in purchasedGoods)
+            {
+                if (good < minPrice)
+                {
+                    minPrice = good;
+                }
+            }
+
+            Console.WriteLine("The least expensive item cost $" + minPrice);
+            Console.ReadKey();
+
+        }
+    }
+}
+
+17 using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool[] newsFacts = { false, false, true, false, true, false,true };
+            int falseCount = 0;
+            int trueCount = 0;
+
+            foreach(bool fact in newsFacts)
+            {
+                if (fact == false)
+                {
+                    falseCount++;
+                }
+                else
+                {
+                    trueCount++;
+                }
+            }
+            if(falseCount > trueCount)
+            {
+                Console.WriteLine("there have been " + (falseCount - trueCount) + " more false statements than true");
+            }
+            else if(trueCount>falseCount)
+            {
+                Console.WriteLine("there have been " + (trueCount - falseCount) + " more true statements than false");
+            }
+            else
+            {
+                Console.WriteLine("there have been the same number of true and false");
+            }
+            Console.ReadKey();
+
+        }
+    }
+}
+
+18 news statements
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool[] newsFacts = { false, false, true, false, true, false, true };
+            int falseCount = 0;
+            int trueCount = 0;
+
+            foreach (bool fact in newsFacts)
+            {
+                if (fact == false)
+                {
+                    falseCount++;
+                }
+                else
+                {
+                    trueCount++;
+                }
+            }
+            if (falseCount > trueCount)
+            {
+                Console.WriteLine("there have been " + (falseCount - trueCount) + " more false statements than true");
+            }
+            else if (trueCount > falseCount)
+            {
+                Console.WriteLine("there have been " + (trueCount - falseCount) + " more true statements than false");
+            }
+            else
+            {
+                Console.WriteLine("there have been the same number of true and false");
+            }
+            Console.ReadKey();
+
+        }
+    }
+}
 
 
 
