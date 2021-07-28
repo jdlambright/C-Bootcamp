@@ -98,27 +98,7 @@ namespace firstConsoleApp
 
 5 body fat
 
-using System;
 
-namespace firstConsoleApp
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-
-            decimal[] bodyFat = { .124m, .152m, .194m, .146m };
-
-            foreach(decimal percentage in bodyFat)
-            {
-                Console.WriteLine(percentage * 100 + "%");
-            }
-
-
-            Console.ReadKey();
-       }
-    }
-}
 
 6 news facts
 
@@ -424,7 +404,9 @@ namespace firstConsoleApp
     }
 }
 
-17 using System;
+17 restaurant ratings
+
+using System;
 
 namespace firstConsoleApp
 {
@@ -433,33 +415,20 @@ namespace firstConsoleApp
         static void Main(string[] args)
         {
 
-            bool[] newsFacts = { false, false, true, false, true, false,true };
-            int falseCount = 0;
-            int trueCount = 0;
+            int[] restaurantRatings = { 5, 3, 2, 4, 5, 3, 2 };
+            int minimumRating = 4;
+            int meetsMinimum = 0;
 
-            foreach(bool fact in newsFacts)
+            foreach( int rating in restaurantRatings)
             {
-                if (fact == false)
+                if (rating >= minimumRating)
                 {
-                    falseCount++;
-                }
-                else
-                {
-                    trueCount++;
+                    meetsMinimum++;
                 }
             }
-            if(falseCount > trueCount)
-            {
-                Console.WriteLine("there have been " + (falseCount - trueCount) + " more false statements than true");
-            }
-            else if(trueCount>falseCount)
-            {
-                Console.WriteLine("there have been " + (trueCount - falseCount) + " more true statements than false");
-            }
-            else
-            {
-                Console.WriteLine("there have been the same number of true and false");
-            }
+
+            Console.WriteLine("total restuarants: " + restaurantRatings.Length);
+            Console.WriteLine("meets minimum: " + meetsMinimum);
             Console.ReadKey();
 
         }

@@ -1,0 +1,66 @@
+function notes
+
+// public and static are key words we use we will learn more about later
+// void means this function does not return any values
+// FunctionName is written in pascal case
+
+
+public static void FunctionName(datatype param1Name, datatype param2Name,...)
+{
+    execute code
+}
+
+//to write a function that returns a value replace void with the datatype and add return in brackets
+
+public static datatype FunctionName(datatype param1Name, datatype param2Name,...)
+{
+    execute code
+    
+    return returnValue;
+}
+
+examples
+// keep in mind that you cannot define a function within another function
+// so the functions are written below the Main function
+// to call a function you call it within the main
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteName("Josh", "Lambright");
+            
+            int[] numberList = {2,4,5,7};
+            int functionResult = GetSum(numberList);
+            
+            Console.WriteLine("the sum of the ints is: " +functionResult);
+            Console.ReadKey();
+        }
+        
+        // function that does not return anything
+        
+        public static void WriteName(string firstName, string lastName)
+        {
+            string fullName = firstName + " " + lastName;
+            Console.writeLine (fullName);
+        }
+        
+        // function that returns a value
+        
+        public static int GetSum(int[] intsToSum)
+        {
+            int intergerSum = 0;
+            
+            foreach (int value in intsToSum)
+            {
+                integerSum+= value;
+            }
+            return integerSum;
+        }
+        
+    }
+}

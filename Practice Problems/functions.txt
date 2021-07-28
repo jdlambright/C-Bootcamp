@@ -1,0 +1,97 @@
+1 "hello from a function"
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            MyFunction();
+
+        }
+
+        public static void MyFunction()
+        {
+            Console.WriteLine("hello from a function");
+        }
+    }
+}
+
+2 "this will print"
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        public void MyFunction()
+        {
+            Console.WriteLine("This will print once per call");
+        }
+
+        static void Main(string[] args)
+        {
+            Program run = new Program();
+
+            run.MyFunction();
+            run.MyFunction();
+
+            Console.WriteLine("press any key to exit");
+            Console.ReadKey();
+
+        }
+
+        
+    }
+}
+
+3 return hello
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static string FunctionReturnString()
+        {
+            return "Hello";
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("the function returns: " + Program.FunctionReturnString());
+            Console.ReadKey();
+        }
+
+        
+    }
+}
+
+4 return 10.4
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static decimal FunctionReturnDecimal()
+        {
+            return 10.4m;
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("the function returns: " + Program.FunctionReturnDecimal());
+            Console.ReadKey();
+        }
+
+        
+    }
+}
+
