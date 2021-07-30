@@ -4,18 +4,27 @@ namespace firstConsoleApp
 {
     class Program
     {
-        static decimal FunctionReturnDecimal()
-        {
-            return 10.4m;
-        }
-
+        
         static void Main(string[] args)
         {
-            Console.WriteLine("the function returns: " + Program.FunctionReturnDecimal());
+            string[] myStrings = { "hello", "world" };
+
+            Console.WriteLine("This number of strings is: " + StringCount(myStrings));
+
             Console.ReadKey();
         }
 
-        
+        public static int StringCount(string[] myStrings)
+        {
+            int numStrings = 0;
+
+            foreach (string str in myStrings)
+            {
+                numStrings++;
+            }
+            return numStrings;
+        }
+
     }
 }
 
