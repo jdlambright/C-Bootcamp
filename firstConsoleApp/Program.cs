@@ -7,25 +7,23 @@ namespace firstConsoleApp
         
         static void Main(string[] args)
         {
-            string[] myStrings = { "hello", "world" };
 
-            Console.WriteLine("This number of strings is: " + StringCount(myStrings));
+            Console.WriteLine("your trip cost: " + TripCost(2, 2, 2));
+
 
             Console.ReadKey();
         }
 
-        public static int StringCount(string[] myStrings)
+        public static decimal TripCost(decimal numTickets, decimal numPopcorn, decimal numSodas)
         {
-            int numStrings = 0;
+            decimal ticketCost = 8.00m;
+            decimal popcornCost = 3.50m;
+            decimal sodaCost = 2.75m;
 
-            foreach (string str in myStrings)
-            {
-                numStrings++;
-            }
-            return numStrings;
+            return (ticketCost * numTickets) + (popcornCost * numPopcorn) + (sodaCost * numSodas);
         }
 
+        
+        
     }
 }
-
-
