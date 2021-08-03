@@ -8,19 +8,15 @@ namespace firstConsoleApp
         static void Main(string[] args)
         {
 
-            Console.WriteLine("your trip cost: " + TripCost(2, 2, 2));
+            Console.WriteLine("this function returns: " + Return10());
 
 
             Console.ReadKey();
         }
 
-        public static decimal TripCost(decimal numTickets, decimal numPopcorn, decimal numSodas)
+        public static int Return10()
         {
-            decimal ticketCost = 8.00m;
-            decimal popcornCost = 3.50m;
-            decimal sodaCost = 2.75m;
-
-            return (ticketCost * numTickets) + (popcornCost * numPopcorn) + (sodaCost * numSodas);
+            return 10;
         }
 
         

@@ -95,3 +95,634 @@ namespace firstConsoleApp
     }
 }
 
+5 
+
+6 
+
+7 first call second call
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            MyFunction("first");
+            MyFunction("second");
+
+            
+            Console.ReadKey();
+        }
+
+        public static void MyFunction(string statement)
+        {
+            Console.WriteLine("this is the " + statement + " call");
+        }
+    }
+}
+
+8 number
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            MyFunction(1);
+            MyFunction(4);
+
+            
+            Console.ReadKey();
+        }
+
+        public static void MyFunction(int input)
+        {
+            Console.WriteLine(input);
+        }
+    }
+}
+
+9 decimal
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            MyFunction(1.2m);
+            MyFunction(6.3m);
+
+            
+            Console.ReadKey();
+        }
+
+        public static void MyFunction(decimal input)
+        {
+            Console.WriteLine(input);
+        }
+    }
+}
+
+10 bool
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            MyFunction(false);
+            MyFunction(true);
+
+            
+            Console.ReadKey();
+        }
+
+        public static void MyFunction(bool input)
+        {
+            Console.WriteLine(input);
+        }
+    }
+}
+
+11 10+10
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            Console.WriteLine("the function returns: " + (FunctionReturn10() + FunctionReturn10()));
+
+
+
+            Console.ReadKey();
+        }
+
+        public static int FunctionReturn10()
+        {
+            return 10;
+        }
+        
+    }
+}
+
+12 10 + 5
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            Console.WriteLine("the function returns: " + (FunctionReturn10() + 5));
+
+
+
+            Console.ReadKey();
+        }
+
+        public static int FunctionReturn10()
+        {
+            return 10;
+        }
+        
+    }
+}
+
+13 outer function inner function
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            OuterFunction();
+
+
+            Console.ReadKey();
+        }
+
+        public static void OuterFunction()
+        {
+            Console.WriteLine("this is the outer function");
+
+            Innerfunction();
+
+            Console.WriteLine("this is the end of the outer function");
+
+            static void Innerfunction()
+            {
+                Console.WriteLine("this is the inner function");
+            }
+        }
+        
+    }
+}
+
+14 full name
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine(FullName("Bob", "Smith"));
+
+            Console.ReadKey();
+        }
+
+        public static string FullName(string firstName, string lastName)
+        {
+            return firstName + " " + lastName;
+        }
+        
+    }
+}
+
+15 get higher value
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            Console.WriteLine("the highest value is: ");
+            Console.WriteLine(GetHigherValue(3, 7));
+
+
+            Console.ReadKey();
+        }
+
+        public static int GetHigherValue( int firstValue, int secondValue)
+        {
+            if (firstValue > secondValue)
+            {
+                return firstValue;
+            }
+            return secondValue; // else is not necessary because return would stop the code
+        }
+        
+    }
+}
+16 lower value
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            Console.WriteLine("the lower value is: ");
+            Console.WriteLine(GetLowerValue(3, 7));
+
+
+            Console.ReadKey();
+        }
+
+        public static int GetLowerValue( int firstValue, int secondValue)
+        {
+            if (firstValue < secondValue)
+            {
+                return firstValue;
+            }
+            return secondValue; 
+        }
+        
+    }
+}
+
+17 squared
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            Console.WriteLine("this number squared is: " + Squared(2));
+
+
+            Console.ReadKey();
+        }
+
+        public static int Squared(int Num)
+        {
+            return Num * 2;
+        }
+    }
+}
+
+18 write user details
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            WriteUserDetails("bob", "smith", 101);
+
+
+            Console.ReadKey();
+        }
+
+        public static void WriteUserDetails(string firstName,string lastName, int Age)
+        {
+            Console.WriteLine("My name is " + firstName + " " + lastName + " and I am " + Age + " years old");
+        }
+    }
+}
+
+19 string count
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            string[] myStrings = { "hello", "world" };
+
+            Console.WriteLine("This number of strings is: " + StringCount(myStrings));
+
+            Console.ReadKey();
+        }
+
+        public static int StringCount(string[] myStrings)
+        {
+            int numStrings = 0;
+
+            foreach (string str in myStrings)
+            {
+                numStrings++;
+            }
+            return numStrings;
+        }
+
+    }
+}
+
+20 Table to teaspoons
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            int numTable = 3;
+
+            Console.WriteLine("There are " + TableToTea(numTable) + " teaspoons in " + numTable + " tablespoons");
+
+
+            Console.ReadKey();
+        }
+
+
+        public static int TableToTea(int numTable)
+        {
+            return (numTable * 3);
+        }
+        
+
+    }
+}
+
+21 hours to minutes
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            int numHours = 3;
+
+            Console.WriteLine("There are " + HoursToMinutes(numHours) + " minutes in " + numHours + " hours");
+
+
+            Console.ReadKey();
+        }
+
+
+        public static int HoursToMinutes(int numHours)
+        {
+            return (numHours * 60);
+        }
+        
+
+    }
+}
+
+22 high num
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            Console.WriteLine("the highest number is: " + HighNumber(2, 3, 6));
+
+
+            Console.ReadKey();
+        }
+
+        
+        public static int HighNumber(int n1,int n2, int n3)
+        {
+            int[] intArray = { n1, n2, n3 };
+            int highNum = 0;
+
+            foreach(int num in intArray)
+            {
+                if(num > highNum)
+                {
+                    highNum = num;
+                }
+            }
+
+            return highNum;
+        }
+        
+
+    }
+}
+
+23 print array
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+
+            PrintArray(new int[] { 12, 2, 4 });
+
+
+            Console.ReadKey();
+        }
+
+        public static void PrintArray(int[] myArray)
+        {
+            foreach( int num in myArray)
+            {
+                Console.Write(num + " ");
+            }
+        }
+        
+
+    }
+}
+
+24 print number
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+
+            PrintArrayIndex(new int[] { 12, 2, 4, 14, 2 }, 3);
+
+
+            Console.ReadKey();
+        }
+
+        public static void PrintArrayIndex(int[] myArray, int arrayIndex)
+        {
+            Console.WriteLine(myArray[arrayIndex]);
+        }
+        
+
+    }
+}
+
+25 get max
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            int[] test = { 2, 6, 3, 6, 7, };
+
+            Console.WriteLine("The highest number is: " + GetArrayMax(test));
+            
+
+
+            Console.ReadKey();
+        }
+
+        public static int GetArrayMax(int[] myArray )
+        {
+            int max = 0;
+            
+            foreach(int num in myArray)
+            {
+                if (num > max)
+                {
+                    max = num;
+                }
+            }
+
+            return max;
+
+        }
+        
+    }
+}
+
+26 rectangle details
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+
+            GetDetails(3, 5);
+
+
+            Console.ReadKey();
+        }
+
+        public static void GetDetails(int height, int width)
+        {
+            Console.WriteLine("the width is: " + width);
+            Console.WriteLine("the height is: " + height);
+            Console.WriteLine("the area for the rectangle is: " + (height * width));
+            Console.WriteLine("the perimeter is: " + ((height * 2) + (width * 2)));
+        }
+
+        
+        
+    }
+}
+
+27 movies
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("your trip cost: " + TripCost(2, 2, 2));
+
+
+            Console.ReadKey();
+        }
+
+        public static decimal TripCost(decimal numTickets, decimal numPopcorn, decimal numSodas)
+        {
+            decimal ticketCost = 8.00m;
+            decimal popcornCost = 3.50m;
+            decimal sodaCost = 2.75m;
+
+            return (ticketCost * numTickets) + (popcornCost * numPopcorn) + (sodaCost * numSodas);
+        }        
+    }
+}
+
+28 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
