@@ -4,22 +4,24 @@ namespace firstConsoleApp
 {
     class Program
     {
-        
+
         static void Main(string[] args)
         {
-
-            Console.WriteLine("this function returns: " + Return10());
+            Console.WriteLine("the highest value is: ");
+            Console.WriteLine(GetHigherValue(3, 7));
 
 
             Console.ReadKey();
         }
 
-        public static int Return10()
+        public static int GetHigherValue(int firstValue, int secondValue)
         {
-            return 10;
+            if (firstValue > secondValue)
+            {
+                return firstValue;
+            }
+            return secondValue;
         }
 
-        
-        
     }
 }
