@@ -1,0 +1,72 @@
+ToUpper();
+ToLower();
+
+
+string firstName = "josh";
+
+if (firstName.ToUpper() == "JOSH")
+    {
+        Console.Write("hello josh");
+    }
+    
+// this does not change the old string, it creates a new one. strings are immutable
+
+if we want to re use the modified string then we need to assign it
+
+string firstNameUpper = firstName.ToUpper();
+
+
+IndexOf()- returns the indext of the first occurence of a character or sequence of characters in a string or -1 if not found
+
+string sentence = "Hello, How are you?";
+
+int firstIndex = sentence.IndexOf("H"); // returns 0
+
+a second argument can be placed in it which states the starting location
+
+int secondIndex = sentence.IndexOf("H", firstIndex + 1); // returns 6
+
+Substring() - returns a poriton of the original string. the first argument states which index you start at. the second is the length of it.
+
+sentence.Substring(8); // returns "How are you?"
+
+
+sentence.Substring(8, 3); // returns "How"
+
+
+    escape sequence- a sequence of characters that together represent a single special character
+
+\'   sincle quote
+\"   double quote
+\\   backslash
+\t   horizontal tab
+\r   carriage return
+\n   new line
+
+verbatim string literal- procede a string with a @ it will ignore everything listed above except " becuase it has special meaning.
+
+string interpolation similar to f string uses dollar instead of f and then {} within to list variables. its cleaner than concatonating
+
+string nameMessage = $"Hello I my name is {firstName} {lastName}";
+
+string.Format(formatString, arg0, arg1, arg2)
+string.Format("I have {0:C} in my {1} account", amount, bankName); // the C tells the system to format it as currency. (format specifier)
+
+the collect the info of a key that is pressed
+
+ConsoleKeyInfo keyInfo = Console.Readkey();
+
+this would tell us which key was pressed
+
+string userInput = Console.Readline();
+
+
+
+
+
+
+
+
+
+
+

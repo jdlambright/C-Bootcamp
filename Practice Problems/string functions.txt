@@ -1,0 +1,285 @@
+1 to upper
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string mixedCaseText = "This is some Mixed CASE text.";
+            string UpperCaseText = mixedCaseText.ToUpper();
+
+            Console.WriteLine(UpperCaseText);
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+2 to lower
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string mixedCaseText = "This is some Mixed CASE text.";
+            string lowerCaseText = mixedCaseText.ToLower();
+
+            Console.WriteLine(lowerCaseText);
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+3 quote
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            
+
+            Console.WriteLine("my favorite quote is: \"The future belongs to those who belive in the beauty of their dress.\" -Eleanor Roosavelt.");
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+4 file location
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {           
+            Console.WriteLine(@"C:\users\example");
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+5 nelson mandela
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {           
+            Console.WriteLine(@"my favorite quote is: ""THe greatest glory in living lies not in never falling, but in rising every time we fall."" - Nelson Mandela");
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+6. length
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string message = "hello world";
+
+            Console.WriteLine(message.Length);
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+7 literal variable
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string variable = "this is a variable";
+
+            Console.WriteLine(@"this is a literal, {0}", variable);
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+8 concatonating
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string variable = "this is a variable";
+
+            Console.WriteLine("this is a literal, "+ variable);
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+9 $""
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string variable = "this is a variable";
+
+            Console.WriteLine($"this is a literal, {variable}");
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+10 indexof
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string letter = "H";
+            string sentence = "Hello World";
+
+            int indexOfLetter = sentence.IndexOf(letter);
+
+            Console.WriteLine(indexOfLetter);
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+11 contains letter
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string letter = "H";
+            string sentence = "Hello World";
+            bool containsLetter = false;
+
+            int indexOfLetter = sentence.IndexOf(letter);
+
+            if (sentence.IndexOf(letter)!= -1)
+            {
+                containsLetter = true;
+            }
+            Console.WriteLine(containsLetter);
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+12 substring world
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string phrase = "Hello World";
+            string world = phrase.Substring(6);
+
+            Console.WriteLine(phrase);
+            Console.WriteLine(world);
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -22,7 +22,7 @@ public static datatype FunctionName(datatype param1Name, datatype param2Name,...
 examples
 // keep in mind that you cannot define a function within another function
 // so the functions are written below the Main function
-// to call a function you call it within the main
+// to call a function you call it within the main function
 
 using System;
 

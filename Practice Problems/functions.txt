@@ -49,7 +49,33 @@ namespace firstConsoleApp
     }
 }
 
-3 return hello
+3 return 10
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("this function returns: " + Return10());
+
+
+            Console.ReadKey();
+        }
+
+        public static int Return10()
+        {
+            return 10;
+        }        
+    }
+}
+
+
+4 return hello
 
 using System;
 
@@ -72,7 +98,7 @@ namespace firstConsoleApp
     }
 }
 
-4 return 10.4
+5 return 10.4
 
 using System;
 
@@ -89,15 +115,30 @@ namespace firstConsoleApp
         {
             Console.WriteLine("the function returns: " + Program.FunctionReturnDecimal());
             Console.ReadKey();
-        }
-
-        
+        }        
     }
 }
 
-5 
-
 6 
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+        static bool FunctionReturnBool()
+        {
+            return true;
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("the function returns: " + Program.FunctionReturnBool());
+            Console.ReadKey();
+        }        
+    }
+}
 
 7 first call second call
 
@@ -334,11 +375,12 @@ namespace firstConsoleApp
             {
                 return firstValue;
             }
-            return secondValue; // else is not necessary because return would stop the code
+            return secondValue;
         }
         
     }
 }
+
 16 lower value
 
 using System;
@@ -666,9 +708,7 @@ namespace firstConsoleApp
             Console.WriteLine("the area for the rectangle is: " + (height * width));
             Console.WriteLine("the perimeter is: " + ((height * 2) + (width * 2)));
         }
-
-        
-        
+       
     }
 }
 
