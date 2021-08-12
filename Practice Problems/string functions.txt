@@ -52,10 +52,8 @@ namespace firstConsoleApp
     {
 
         static void Main(string[] args)
-        {
-            
-
-            Console.WriteLine("my favorite quote is: \"The future belongs to those who belive in the beauty of their dress.\" -Eleanor Roosavelt.");
+        {           
+            Console.WriteLine("my favorite quote is: \"this is a quote.\" - Roosevelt");
 
 
             Console.ReadKey();
@@ -261,12 +259,205 @@ namespace firstConsoleApp
     }
 }
 
-13
+13 same name ToLower
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string myName = "john";
+            string yourName = "John";
+
+            if (myName.ToLower() == yourName.ToLower())
+            {
+                Console.WriteLine("we have the same name");
+            }
 
 
+            Console.ReadKey();
+        }
+    }
+}
+
+14 substring message from e
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string message = "hello world";
+            int indexOfFirstE = message.IndexOf("e");
+            string messageFromE = message.Substring(indexOfFirstE);
+
+            Console.WriteLine(indexOfFirstE);
+            Console.WriteLine(messageFromE);
 
 
+            Console.ReadKey();
+        }
+    }
+}
 
+15 same name to upper
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string myName = "john";
+            string yourName = "John";
+
+            if (myName.ToUpper() == yourName.ToUpper())
+            {
+                Console.WriteLine("we have the same name");
+            }
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+16 substring llo world
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string message = "hello world";
+            int indexOfFirstE = message.IndexOf("e");
+            string messageFromE = message.Substring(indexOfFirstE + 1);
+
+            Console.WriteLine(messageFromE);
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+17 sentence. split
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string fullSentence = "the quick brown fox jumped over the lazy dog";
+            string[] splitSentence = fullSentence.Split();
+
+            foreach (string word in splitSentence)
+            {
+                Console.WriteLine(word);
+            }
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+18 index of chicken
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string fullSentence = "the word I am going to find is: sheep. however, do not get this sentence";
+            string chickenSubstring = fullSentence.Substring(fullSentence.IndexOf("chicken"), "chicken".Length);
+
+            Console.WriteLine(chickenSubstring);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+
+19 index of sheep
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string fullSentence = "the word I am going to find is: sheep. however, do not get this sentence";
+            string sheepSubstring = fullSentence.Substring(fullSentence.IndexOf("sheep"), "sheep".Length);
+
+            Console.WriteLine(sheepSubstring);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+20 contains fishing
+
+using System;
+
+namespace firstConsoleApp
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string sentence = "I like to go fishing and college football";
+            string word = "fishing";
+            bool containsWord = false;
+
+
+            Console.WriteLine("this sentence is: " + sentence);
+
+            if (sentence.IndexOf("fishing")!= -1)
+            {
+                containsWord = true;
+                Console.WriteLine("the sentence contains \"" + word + "\":  + containsWord");
+            }
+            else
+            {
+                Console.WriteLine("the sentence does not contain the word: " + word);
+            }
+            
+
+
+            Console.ReadKey();
+        }
+    }
+}
 
 
 

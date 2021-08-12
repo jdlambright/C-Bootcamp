@@ -1,0 +1,54 @@
+field - a variable that belongs to a class
+
+method - function that belongs to a class
+
+public class CLassName // pascal case name 
+    {
+        public datatype fieldName 1; // only difference between variable and field is you put public at beginning
+        
+        public dataType MethodName1(dataType parameter1)
+        {
+            // method logic
+        }
+        
+        public dataType MethodName1(dataType parameter1, dataType parameter2)
+        {
+            // method logic
+        }
+        
+        //overloaded method- 2 methods with the same name but different signatures (different datatypes, and or number parameters
+        // example you could have a GetSum method and one is for decimals and the other is integers)
+        
+        public static MethodName2(dataType parameter1, dataType parameter2)
+        {
+            // method logic
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
