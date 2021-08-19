@@ -7,19 +7,15 @@ namespace firstConsoleApp
 
         static void Main(string[] args)
         {
-            Shape triangle = new Shape(3, new int[] { 4, 7, 2 });
+            BankAccount john = new BankAccount("john", 456, 1300.45m);
 
-            Console.WriteLine($"Number of sides: {triangle.numberOfSides}");
-            foreach(int side in triangle.sideLengths)
-            {
-                Console.Write($"{side}, ");
-            }
-            Console.WriteLine();
-            Console.WriteLine($"Perimeter: {triangle.CalculatePerimeter()}");
-            
+            Console.WriteLine($"name {john.accountName}, account: {john.accountID} balance: {john.accountBalance}");
+
+            john.ModifyBalance(1000);
+
+            Console.WriteLine($"the new balance is: {john.accountBalance}");
 
             Console.ReadKey();
-
         }
     }
 }
