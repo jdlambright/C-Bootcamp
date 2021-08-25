@@ -6,14 +6,15 @@ namespace firstConsoleApp
 {
     class Farm
     {
-        //fields
-        public int totalCropsHarvested = 0;
-        public int cropsCurrentlyPlanted = 0;
-        public int maxCropsPlanted = -1;
-        
-        public Farm(int maxCrops)
+        public int totalCropsHarvested;
+        public int cropsCurrentlyPlanted;
+        public int maxCropsPlanted;
+
+        public Farm(int harvested, int current, int max)
         {
-            maxCropsPlanted = maxCrops;
+            totalCropsHarvested = harvested;
+            cropsCurrentlyPlanted = current;
+            maxCropsPlanted = max;
         }
 
         public void HarvestCrops()
@@ -24,8 +25,7 @@ namespace firstConsoleApp
 
         public void PlantCrops(int cropsToPlant)
         {
-
-            if( (cropsCurrentlyPlanted + cropsToPlant) > maxCropsPlanted)
+            if ((cropsToPlant + cropsCurrentlyPlanted) > maxCropsPlanted)
             {
                 cropsCurrentlyPlanted = maxCropsPlanted;
             }
@@ -34,5 +34,6 @@ namespace firstConsoleApp
                 cropsCurrentlyPlanted += cropsToPlant;
             }
         }
+
     }
 }

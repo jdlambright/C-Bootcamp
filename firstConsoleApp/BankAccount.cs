@@ -4,24 +4,13 @@ using System.Text;
 
 namespace firstConsoleApp
 {
-    class BankAccount
+    static class GPACalculator
     {
-        public string accountName = "";
-        public int accountID = -1;
-        public decimal accountBalance = 0.0m;
-
-        public BankAccount(string name, int id, decimal balance)
+        public static void CalculateGPA()
         {
-            accountName = name;
-            accountID = id;
-            accountBalance = balance;
+            Console.WriteLine("GPA: 4.0");
         }
-
-        public void ModifyBalance( int deposit)
-        {
-            accountBalance += deposit;
-        }
-    }
-
-    
+    }  
 }
+
+

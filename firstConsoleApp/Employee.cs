@@ -6,22 +6,21 @@ namespace firstConsoleApp
 {
     class Employee
     {
-        // declaring fields
-        public string employeeName = "";
-        public int employeeStoreId = -1;
-        public int employeePayRate = 0;
+        // employee fields
+        public string employeeName;
+        public int employeeId;
+        public int employeePayrate = 0;
 
-        // employee constructor
-        public Employee(string name, int storeId, int payRate)
+        public Employee (string name, int id, int payrate)
         {
             employeeName = name;
-            employeeStoreId = storeId;
-            employeePayRate = payRate;
+            employeeId = id;
+            employeePayrate = payrate;
         }
 
         public int GetYearlySalary()
         {
-            return employeePayRate * 12;
+            return employeePayrate * 12;
         }
 
     }  
