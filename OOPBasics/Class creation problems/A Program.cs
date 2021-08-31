@@ -6,7 +6,8 @@ namespace OOPBasics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Candle green = new Candle();
+
         }
     }
 }
